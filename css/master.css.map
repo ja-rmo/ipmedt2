@@ -1,1 +1,5 @@
-{"version":3,"sourceRoot":"","sources":["master.scss","variables.scss"],"names":[],"mappings":"AACA;EACE;EACA;;;AAGF;EACE,kBCPiB;EDQjB,OCPW;EDQX;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA","file":"master.css"}
+<<<<<<< HEAD
+{"version":3,"sourceRoot":"","sources":["master.scss","variables.scss"],"names":[],"mappings":"AACA;EACE,kBCFiB;EDGjB,OCFW","file":"master.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["map.scss","master.scss","variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;;AAEA;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;;;ACjCR;EACE;EACA;EACA;;;AAGF;EACE,kBCViB;EDWjB,OCVW","file":"master.css"}
+>>>>>>> c9d8ec28d246176bf57b5be4f242103fbebc4245
