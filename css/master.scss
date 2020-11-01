@@ -1,5 +1,20 @@
 @import "variables";
+<<<<<<< HEAD
 body {
   background-color: $background-color;
   color: $text-color;
 }
+=======
+@import "map";
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+>>>>>>> c9d8ec28d246176bf57b5be4f242103fbebc4245
