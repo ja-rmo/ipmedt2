@@ -1,13 +1,12 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "variables";
 @import "map";
-
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "index";
+@import "startPage";
 
 body {
   background-color: $background-color;
   color: $text-color;
+  font-family: 'Roboto', sans-serif;
 }
