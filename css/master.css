@@ -1,6 +1,54 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .map {
-  background-color: black;
-  height: 100vh;
   padding: 10px 0;
 }
 .map__text-section {
@@ -16,25 +64,69 @@
 }
 .map__map__figure {
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-  grid-template-rows: repeat(9, minmax(0, 1fr));
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  grid-template-rows: repeat(18, minmax(0, 1fr));
+  height: 100vh;
 }
 .map__map__figure__img {
-  grid-column: 1/span 1;
-  grid-row: 1/span 1;
+  grid-column: 1/span 18;
+  grid-row: 1/span 18;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.map__map__figure__div__iconText {
+  font-size: 20px;
+}
+.map__map__figure__ministry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 10;
+  z-index: 5;
+  cursor: pointer;
+}
+.map__map__figure__ministry__icon-ministry {
+  height: 90%;
+  width: 100%;
+}
+.map__map__figure__goma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 17;
+  grid-row: 8;
+  z-index: 5;
+  cursor: pointer;
+}
+.map__map__figure__goma__icon-village {
+  height: 70%;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.map__map__figure__mine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 15;
+  grid-row: 8;
+  z-index: 5;
+  cursor: pointer;
+}
+.map__map__figure__mine__icon-mine {
+  height: 70%;
+  width: 100%;
 }
 .map__map__figure__clickable-div {
   content: "";
   display: block;
-  border: 5px solid green;
   grid-column: 5/span 3;
   grid-row: 5/span 3;
-}
-
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  z-index: 5;
 }
 
 body {
