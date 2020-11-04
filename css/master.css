@@ -159,8 +159,73 @@ table {
   padding: 10px;
 }
 
-body {
+.mine__background {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.mine__background__img {
+  height: 100%;
+}
+.mine__background__safe-route-button {
+  position: absolute;
+  z-index: 100;
+  top: 70%;
+  left: 10px;
+}
+.mine__background__normal-route-button {
+  position: absolute;
+  z-index: 100;
+  top: 70%;
+  left: 50%;
+}
+.mine__background #img-jungle-path-right {
+  float: right;
+}
+.mine__background #img-jungle-path-center {
+  float: right;
+}
+.mine__dialog-section {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  width: 100%;
+}
+.mine__dialog-section__text-section {
   background-color: black;
+  position: relative;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  height: 150px;
+  width: 100%;
+  line-height: 1.1rem;
+  opacity: 0.75;
+}
+.mine__dialog-section__text-section__arrows-style-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.mine__dialog-section__text-section__arrows-style-div__amount-of-pages {
+  padding: 5px 10px;
+}
+.mine__dialog-section__text-section__arrows-style-div__arrow-left, .mine__dialog-section__text-section__arrows-style-div__arrow-right {
+  border: 1px solid white;
+  padding: 5px;
+  display: block;
+}
+.mine__dialog-section__text-section__arrows-style-div__arrow-left:hover, .mine__dialog-section__text-section__arrows-style-div__arrow-right:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+body {
   color: #e5e5e5;
 }
 
