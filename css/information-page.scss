@@ -1,0 +1,25 @@
+.information-page {
+  padding: 10px;
+
+  &__body {
+
+
+    &__title {
+      font-size: $mobile-title-font-size;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+
+    }
+
+    &__text {
+      color: red; /** Placeholder **/
+    }
+
+    &__form {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+  }
+}

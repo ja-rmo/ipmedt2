@@ -1,8 +1,9 @@
 @import "reset";
 @import "variables";
 @import "map";
+@import "information-page";
 
 body {
-  background-color: $background-color;
+  background-color: black;
   color: $text-color;
 }

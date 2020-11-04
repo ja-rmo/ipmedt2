@@ -7,6 +7,18 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
+
+    &__title {
+      font-size: 4rem;
+      padding: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__description {
+      font-size: 1.1rem;
+    }
   }
 
   &__map {
@@ -85,9 +97,10 @@
       &__clickable-div {
         content: "";
         display: block;
-        grid-column: 5 / span 3;
-        grid-row: 5 / span 3;
+        grid-column: 9 / span 6;
+        grid-row: 10 / span 4;
         z-index: 5;
+        border: 1px solid pink;
       }
     }
   }

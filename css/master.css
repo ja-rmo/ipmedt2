@@ -58,6 +58,16 @@ table {
   flex-direction: column;
   padding: 10px;
 }
+.map__text-section__title {
+  font-size: 4rem;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.map__text-section__description {
+  font-size: 1.1rem;
+}
 .map__map {
   width: 100vw;
   padding: 10px 0;
@@ -124,13 +134,33 @@ table {
 .map__map__figure__clickable-div {
   content: "";
   display: block;
-  grid-column: 5/span 3;
-  grid-row: 5/span 3;
+  grid-column: 9/span 6;
+  grid-row: 10/span 4;
   z-index: 5;
+  border: 1px solid pink;
+}
+
+.information-page {
+  padding: 10px;
+}
+.information-page__body__title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.information-page__body__text {
+  color: red;
+  /** Placeholder **/
+}
+.information-page__body__form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 body {
-  background-color: #040440;
+  background-color: black;
   color: #e5e5e5;
 }
 
