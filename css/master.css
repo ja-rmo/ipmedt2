@@ -117,6 +117,21 @@ table {
   width: 100%;
   padding-bottom: 5px;
 }
+.map__map__figure__goma__zoomed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 15;
+  grid-row: 10;
+  z-index: 5;
+  cursor: pointer;
+}
+.map__map__figure__goma__zoomed__icon-village {
+  height: 70%;
+  width: 100%;
+  padding-bottom: 5px;
+}
 .map__map__figure__mine {
   display: flex;
   justify-content: center;
@@ -128,6 +143,20 @@ table {
   cursor: pointer;
 }
 .map__map__figure__mine__icon-mine {
+  height: 70%;
+  width: 100%;
+}
+.map__map__figure__mine__zoomed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 8;
+  grid-row: 10;
+  z-index: 5;
+  cursor: pointer;
+}
+.map__map__figure__mine__zoomed__icon-mine {
   height: 70%;
   width: 100%;
 }
