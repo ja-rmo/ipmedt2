@@ -66,11 +66,11 @@ table {
   justify-content: center;
 }
 .map__text-section__description {
-  font-size: 1.1rem;
+  font-size: 33px;
 }
 .map__map {
   width: 100vw;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 .map__map__figure {
   display: grid;
@@ -141,17 +141,29 @@ table {
 }
 
 .information-page {
-  padding: 10px;
+  width: 95%;
+  margin: 10px auto 0 auto;
 }
 .information-page__body__title {
-  font-size: 2rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+.information-page__body__text {
+  line-height: 1.5rem;
+}
+.information-page__body__figure > img {
+  width: 100%;
+  padding: 10px 0;
 }
 .information-page__body__form {
   display: flex;
   justify-content: center;
+}
+.information-page__body__form__button {
+  margin-top: 10px;
+  font-size: 2rem;
   padding: 10px;
 }
 
