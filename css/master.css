@@ -191,6 +191,32 @@ table {
   left: 50%;
   transform: translateX(-48%);
 }
+.mine__background #img-mine_workers {
+  position: relative;
+  left: 60%;
+  transform: translateX(-80%);
+}
+.mine__background #img-mine_work {
+  position: relative;
+  left: 50%;
+  transform: translateX(-45%);
+}
+.mine__background #img-mine_cassiterite {
+  position: relative;
+  top: -73%;
+  left: 70%;
+  height: 5%;
+  z-index: 100;
+}
+.mine__background #img-mine_cassiterite_2 {
+  position: relative;
+  top: -50%;
+  left: 75%;
+  height: 5%;
+  z-index: 100;
+  transform: rotate(0.1turn);
+  display: none;
+}
 .mine__dialog-section {
   position: absolute;
   bottom: 0;
@@ -240,6 +266,7 @@ table {
 }
 
 body {
+  background-color: black;
   color: #e5e5e5;
 }
 
