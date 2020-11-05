@@ -8,7 +8,6 @@ let newErts = document.getElementById('img-mine_cassiterite_2');
 
 var onderwegCounter = 1;
 let ertsClick = 0;
-verderButton.style.display = "none";
 erts.style.display = "none";
 
 terugKnop.onclick = function () {
@@ -40,7 +39,7 @@ erts.onclick = function() {
 };
 
 newErts.onclick = function() {
-
+    console.log("Naar eind pagina linken");
 };
 
 updateText = function() {
@@ -48,13 +47,11 @@ updateText = function() {
         dialogText.innerHTML = 'Hoe zou het zijn om in deze al enorm warme tunnels ook nog eens hard te moeten werken? Je besluit om Chance een beetje te helpen.';
         currentPage.innerHTML = onderwegCounter + ' / 2';
         onderwegCounter = 1;
-        verderButton.style.display = "none";
         console.log(onderwegCounter);
     } else if (onderwegCounter === 2) {
         dialogText.innerHTML = 'Tik meerdere keren op het lichtere stuk steen om deze los te hakken.';
         currentPage.innerHTML = onderwegCounter + ' / 2';
         onderwegCounter = 2;
-        verderButton.style.display = "none";
         if (ertsClick < 10) {
             erts.style.display = "block";
         }

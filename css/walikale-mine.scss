@@ -1,4 +1,5 @@
 .mine {
+
   &__background {
     height: 100vh;
     width: 100%;
@@ -23,12 +24,29 @@
       left: 50%;
     }
 
+    #img-walikale_market {
+      position: absolute;
+      right: 0;
+    }
+
+    #img-walikale_chance-house {
+      position: relative;
+      left: 50%;
+      transform: translateX(-40%);
+    }
+
     #img-jungle-path-right {
       float: right;
     }
 
     #img-jungle-path-center {
       float: right;
+    }
+
+    #img-jungle-soldier {
+      position: relative;
+      left: 20%;
+      transform: translateX(-20%);
     }
 
     #img-checkpoint {
@@ -112,6 +130,15 @@
       }
 
       &__continue-form {
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__continue-form_2 {
         position: absolute;
         bottom: 0;
         width: 90%;

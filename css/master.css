@@ -149,10 +149,6 @@ table {
   justify-content: center;
   padding: 10px;
 }
-.information-page__body__text {
-  color: red;
-  /** Placeholder **/
-}
 .information-page__body__form {
   display: flex;
   justify-content: center;
@@ -180,11 +176,25 @@ table {
   top: 70%;
   left: 50%;
 }
+.mine__background #img-walikale_market {
+  position: absolute;
+  right: 0;
+}
+.mine__background #img-walikale_chance-house {
+  position: relative;
+  left: 50%;
+  transform: translateX(-40%);
+}
 .mine__background #img-jungle-path-right {
   float: right;
 }
 .mine__background #img-jungle-path-center {
   float: right;
+}
+.mine__background #img-jungle-soldier {
+  position: relative;
+  left: 20%;
+  transform: translateX(-20%);
 }
 .mine__background #img-checkpoint {
   position: relative;
@@ -257,6 +267,14 @@ table {
   background-color: white;
 }
 .mine__dialog-section__text-section__continue-form {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.mine__dialog-section__text-section__continue-form_2 {
   position: absolute;
   bottom: 0;
   width: 90%;
