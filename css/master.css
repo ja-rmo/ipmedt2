@@ -502,6 +502,7 @@ table {
 
 .nokia {
   margin: 0 auto;
+  max-width: 500px;
 }
 .nokia__keyboard {
   position: fixed;
@@ -554,7 +555,6 @@ body {
   background-color: #404452;
   color: #e5e5e5;
   font-family: "Roboto", sans-serif;
-  max-width: 500px;
 }
 
 /*# sourceMappingURL=master.css.map */
