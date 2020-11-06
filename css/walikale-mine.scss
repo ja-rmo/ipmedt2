@@ -182,3 +182,34 @@
     padding-bottom: 15px;
   }
 }
+
+@media (min-width: 1280px) {
+  #img-walikale_village {
+    width: 100%;
+  }
+
+  #img-walikale_market {
+    width: 100%;
+  }
+
+  #img-walikale_chance-house {
+    width: 100%;
+    left: 0;
+  }
+
+  #img-jungle-soldier {
+    width: 100%;
+  }
+
+  #img-checkpoint {
+    width: 100%;
+    left: 0;
+  }
+
+  #img-mine_workers {
+    position: relative;
+    left: 0;
+    transform: translateX(50%);
+    width: 100%;
+  }
+}

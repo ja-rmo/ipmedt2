@@ -12,7 +12,13 @@
 <article class="mine">
     <section class="mine">
         <figure class="mine__background">
-            <img class="mine__background__img" id="img-checkpoint" src="img/congo_achtergronden/checkpoint_1920.jpg" alt="De controlepost voor de mijn">
+            <img    srcset="img/congo_achtergronden/checkpoint_640.jpg 640w,
+                            img/congo_achtergronden/checkpoint_1280.jpg 1280w,
+                            img/congo_achtergronden/checkpoint_1920.jpg 1920w"
+                    sizes="(min-width: 1920px) 1920px, (min-width: 1280) 1280px, 640"
+                    src="img/congo_achtergronden/checkpoint_640.jpg" alt="De controlepost voor de mijn"
+                    class="mine__background__img" id="img-checkpoint"
+            >
         </figure>
         <div class="mine__dialog-section">
             <div class="mine__dialog-section__text-section">
