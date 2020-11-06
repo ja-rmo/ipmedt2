@@ -124,26 +124,33 @@ table {
   color: #e5e5e5;
 }
 
+.nokia {
+  margin: 0 auto;
+}
 .nokia__keyboard {
   position: fixed;
-  width: 100%;
   bottom: 0;
+  cursor: pointer;
 }
 .nokia__keyboard img {
   width: 100%;
+  max-width: 500px;
 }
 .nokia__conversation {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   line-height: 1.2em;
   margin-top: 2.4em;
-  margin-bottom: 244px;
+  margin-bottom: 40vh;
 }
 .nokia__conversation__naration {
   display: none;
   text-align: center;
   grid-column: 1/4;
   padding: 0.5em;
+}
+.nokia__conversation__naration a {
+  color: #e5e5e5;
 }
 .nokia__conversation__left {
   display: none;
@@ -171,6 +178,7 @@ body {
   background-color: #404452;
   color: #e5e5e5;
   font-family: "Roboto", sans-serif;
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=master.css.map */

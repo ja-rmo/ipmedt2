@@ -5,9 +5,10 @@
 @import "index";
 @import "startPage";
 @import "nokia";
-
+ 
 body {
   background-color: $background-color;
   color: $text-color;
   font-family: 'Roboto', sans-serif;
+  max-width: 500px;
 }
