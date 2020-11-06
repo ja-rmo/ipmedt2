@@ -12,7 +12,10 @@
 <article class="mine">
     <section class="mine">
         <figure class="mine__background">
-            <img class="mine__background__img" id="img-walikale_village" src="img/congo_achtergronden/walikale_1080.jpg" alt="Een route door de jungle">
+            <img    srcset="img/congo_achtergronden/walikale_540.jpg 540w,
+                            img/congo_achtergronden/walikale_1080.jpg 1080w"
+                    sizes="(min-width: 1080px) 1080px, 540px"
+                    class="mine__background__img" id="img-walikale_village" src="img/congo_achtergronden/walikale_540.jpg" alt="Een afbeelding van het dorp">
         </figure>
         <div class="mine__dialog-section">
             <div class="mine__dialog-section__text-section">
@@ -24,10 +27,10 @@
                 <p class="mine__dialog-section__text-section__text" id="js--dialogText">Je bent in Walikale aangekomen na een schokkerige vlucht. Je weet dat je naar de mijn in Bisie moet om met eigen ogen te zien wat er daar gebeurt, maar voordat je daarheen kan moet je eerst toestemming hebben van de lokale autoriteiten. Het is nu echter weekend en je moet op maandag wachten totdat je toestemming kan vragen.</p>
                 <div class="mine__dialog-section__text-section__continue-form">
                     <form action="walikale_markt.html">
-                        <button id="js--marktButton" type="submit">Rondneuzen op de markt</button>
+                        <button id="js--marktButton" class="normal__button" type="submit">Rondneuzen op de markt</button>
                     </form>
                     <form action="walikale_chance.html">
-                        <button id="js--chanceButton" type="submit">Jongen zoeken</button>
+                        <button id="js--chanceButton" class="normal__button" type="submit">Jongen zoeken</button>
                     </form>
                 </div>
             </div>
