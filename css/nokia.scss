@@ -1,6 +1,7 @@
 @import "variables";
 .nokia {
   margin: 0 auto;
+  max-width: 500px;
     &__keyboard {
     position: fixed;
     bottom: 0;

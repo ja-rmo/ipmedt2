@@ -31,7 +31,7 @@ erts.onclick = function() {
         erts.style.display = "none";
         newErts.style.display = "block";
         console.log("Steen val");
-        dialogText.innerHTML = 'Je hebt een stuk cassiteriet losgehakt, je hebt genoeg gezien. Je wil zo snel mogelijk weer naar boven. En dan te bedenken dat de mensen hier soms onafgebroken een week onder de grond zitten… Neem je het stuk erts mee?';
+        dialogText.innerHTML = 'Je hebt een stuk cassiteriet losgehakt, je hebt genoeg gezien. Je wil zo snel mogelijk weer naar boven. En dan te bedenken dat de mensen hier soms onafgebroken een week lang onder de grond zitten… Neem je het stuk erts mee?';
         terugKnop.style.display = "none";
         currentPage.style.display = "none";
         verderKnop.style.display = "none";
@@ -39,7 +39,7 @@ erts.onclick = function() {
 };
 
 newErts.onclick = function() {
-    console.log("Naar eind pagina linken");
+    window.location.href = "kinderarbeid.html";
 };
 
 updateText = function() {
