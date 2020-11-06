@@ -198,6 +198,39 @@ table {
   padding: 10px;
 }
 
+.kinderarbeid {
+  padding: 10px;
+}
+.kinderarbeid__title {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.kinderarbeid__title-2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.kinderarbeid__information {
+  padding: 10px 0;
+  line-height: 20px;
+}
+.kinderarbeid__information > a {
+  color: red;
+}
+.kinderarbeid__table {
+  width: 100%;
+}
+.kinderarbeid__disclaimer {
+  font-size: 15px;
+}
+.kinderarbeid__disclaimer > a {
+  color: red;
+  font-size: inherit;
+}
+
 .mine__background {
   height: 100vh;
   width: 100%;
@@ -326,6 +359,37 @@ table {
   justify-content: center;
 }
 
+.normal__button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.normal__button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+@supports not (display: flex) {
+  .mine__dialog-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+@supports (display: flex) {
+  .mine__dialog-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mine__dialog-section__text-section {
+    padding-bottom: 15px;
+  }
+}
 .index {
   display: grid;
   grid-template-columns: repeat(5, 20vw);

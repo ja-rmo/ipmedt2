@@ -149,3 +149,36 @@
     }
   }
 }
+
+.normal__button {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.normal__button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+@supports not (display: flex) {
+  .mine__dialog-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@supports (display: flex) {
+  .mine__dialog-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .mine__dialog-section__text-section {
+    padding-bottom: 15px;
+  }
+}
