@@ -13,8 +13,12 @@
         </section>
         <section class="map__map">
             <figure class="map__map__figure">
-                <img class="map__map__figure__img"
-                     src="img/map_of_africa/africa_640.png" alt="Een kaart van Afrika">
+                <img    srcset="img/map_of_africa/africa_640.webp 640w,
+                                img/map_of_africa/africa_1280.webp 1280w,
+                                img/map_of_africa/africa_1920.webp 1920w"
+                        sizes="(min-width: 1920px) 1920px, (min-width: 1280px) 1280px, 640px"
+                        class="map__map__figure__img"
+                     src="img/map_of_africa/africa_640.webp" alt="Een kaart van Afrika">
                 <div class="map__map__figure__clickable-div" id="js--clickable-div"></div>
             </figure>
         </section>

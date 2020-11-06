@@ -13,7 +13,13 @@
     </section>
     <section class="map__map">
         <figure class="map__map__figure">
-            <img class="map__map__figure__img" id="map_of_congo" src="img/map_of_africa/congo_640.png" alt="A map of Africa">
+            <img srcset="img/map_of_africa/congo_640.png 640w,
+                        img/map_of_africa/congo_1280.png 1280w,
+                        img/map_of_africa/congo_1920.png 1920w"
+                 sizes="(min-width: 1920px) 1920px, (min-width: 1280px) 1280px, 640px"
+                 class="map__map__figure__img" id="map_of_congo"
+                 src="img/map_of_africa/congo_640.png" alt="A map of Africa">
+
             <div class="map__map__figure__ministry map__map__figure__div" id="js--clickable-ministry">
                 <img class="map__map__figure__ministry__icon-ministry" src="img/icons/ministry-icon.png" alt="Het ministeri">
                 <p class="map__map__figure__div__iconText">Kinshasa</p>

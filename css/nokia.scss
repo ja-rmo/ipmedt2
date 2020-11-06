@@ -1,11 +1,14 @@
 @import "variables";
 .nokia {
-  &__keyboard {
+  margin: 0 auto;
+  max-width: 500px;
+    &__keyboard {
     position: fixed;
-    width: 100%;
     bottom: 0;
+    cursor: pointer;
     img {
       width: 100%;
+      max-width: 500px;
     }
   }
   &__conversation {
@@ -13,12 +16,15 @@
     grid-template-columns: 40% 20% 40%;
     line-height: 1.2em;
     margin-top: 2.4em;
-    margin-bottom: 244px;
+    margin-bottom: 40vh;
     &__naration {
       display: none;
       text-align: center;
       grid-column: 1/4;
       padding: 0.5em;
+      a {
+        color: $text-color;
+      }
     }
     &__left {
       display: none;
