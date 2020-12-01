@@ -12,7 +12,10 @@
 <article class="mine">
     <section class="mine">
         <figure class="mine__background">
-            <img class="mine__background__img" id="img-mine_top" src="img/congo_achtergronden/mine_top_1080.jpg" alt="Het bovengrondse deel van de mijn">
+            <img    srcset="img/congo_achtergronden/mine_top_540.jpg 540w,
+                            img/congo_achtergronden/mine_top_1080.jpg 1080w"
+                    sizes="(min-width: 1080px) 1080px, 540px"
+                    class="mine__background__img" id="img-mine_top" src="img/congo_achtergronden/mine_top_1080.jpg" alt="Het bovengrondse deel van de mijn">
         </figure>
         <div class="mine__dialog-section">
             <div class="mine__dialog-section__text-section">
@@ -23,7 +26,7 @@
                 </div>
                 <p class="mine__dialog-section__text-section__text" id="js--dialogText">Jullie komen in de buurt van de mijn. Ondertussen zijn jullie heel veel mensen tegen gekomen die stuk voor stuk mineralen vervoeren. Je bent op het standaard pad gekomen nadat je de omweg genomen hebt. Jullie stoppen een klein stukje van tevoren omdat je een controlepost ziet staan.</p>
                 <form class="mine__dialog-section__text-section__continue-form_2" action="mijn_ondergronds.html">
-                    <button id="js--verderButton" type="submit">Ga verder</button>
+                    <button id="js--verderButton" class="normal__button" type="submit">Ga de mijn in</button>
                 </form>
             </div>
         </div>
