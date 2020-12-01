@@ -50,48 +50,49 @@ table {
   border-spacing: 0;
 }
 
-.map {
-  padding: 10px 0;
+.mapPage {
+  margin: 0 auto;
 }
-.map__text-section {
+.mapPage__text-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 1rem;
 }
-.map__text-section__title {
-  font-size: 4rem;
-  padding: 10px;
+.mapPage__text-section__title {
+  font-size: 6rem;
+  padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.map__text-section__description {
-  font-size: 33px;
+.mapPage__text-section__description {
+  font-size: 4rem;
+  padding: 2rem 0;
 }
-.map__map {
-  max-width: 100vw;
-  height: 100vh;
-  padding: 10px 0 0 0;
+.mapPage__map {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0 0 0;
 }
-.map__map__figure {
+.mapPage__map__figure {
   display: grid;
   grid-template-columns: repeat(18, minmax(0, 1fr));
   grid-template-rows: repeat(18, minmax(0, 1fr));
   height: 100vh;
 }
-.map__map__figure__img {
+.mapPage__map__figure__img {
   grid-column: 1/span 18;
   grid-row: 1/span 18;
   width: 100%;
   height: 100%;
   z-index: 4;
 }
-.map__map__figure__div__iconText {
-  font-size: 20px;
+.mapPage__map__figure__div__iconText {
+  font-size: 2rem;
 }
-.map__map__figure__ministry {
+.mapPage__map__figure__ministry {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,11 +102,11 @@ table {
   z-index: 5;
   cursor: pointer;
 }
-.map__map__figure__ministry__icon-ministry {
+.mapPage__map__figure__ministry__icon-ministry {
   height: 90%;
   width: 100%;
 }
-.map__map__figure__goma {
+.mapPage__map__figure__goma {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,12 +116,12 @@ table {
   z-index: 5;
   cursor: pointer;
 }
-.map__map__figure__goma__icon-village {
+.mapPage__map__figure__goma__icon-village {
   height: 70%;
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
-.map__map__figure__goma__zoomed {
+.mapPage__map__figure__goma__zoomed {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,12 +131,12 @@ table {
   z-index: 5;
   cursor: pointer;
 }
-.map__map__figure__goma__zoomed__icon-village {
+.mapPage__map__figure__goma__zoomed__icon-village {
   height: 70%;
   width: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
-.map__map__figure__mine {
+.mapPage__map__figure__mine {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,11 +146,11 @@ table {
   z-index: 5;
   cursor: pointer;
 }
-.map__map__figure__mine__icon-mine {
+.mapPage__map__figure__mine__icon-mine {
   height: 70%;
   width: 100%;
 }
-.map__map__figure__mine__zoomed {
+.mapPage__map__figure__mine__zoomed {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,52 +160,53 @@ table {
   z-index: 5;
   cursor: pointer;
 }
-.map__map__figure__mine__zoomed__icon-mine {
+.mapPage__map__figure__mine__zoomed__icon-mine {
   height: 70%;
   width: 100%;
 }
-.map__map__figure__clickable-div {
+.mapPage__map__figure__clickable-div {
   content: "";
   display: block;
   grid-column: 9/span 6;
   grid-row: 10/span 4;
   z-index: 5;
+  border: 1px solid pink;
 }
 
 @media (min-width: 1920px) {
-  .map__map__figure__clickable-div {
-    grid-column: 4;
+  .mapPage__map__figure__clickable-div {
+    grid-column: 9/span 3;
   }
 
-  .map__map__figure__ministry {
+  .mapPage__map__figure__ministry {
     grid-column: 5;
     grid-row: 11;
   }
 
-  .map__map__figure__goma {
+  .mapPage__map__figure__goma {
     grid-column: 13;
   }
 
-  .map__map__figure__mine {
+  .mapPage__map__figure__mine {
     grid-column: 11;
     grid-row: 7;
   }
 }
 @media (min-width: 1280px) {
-  .map__map__figure__clickable-div {
-    grid-column: 10/span 2;
+  .mapPage__map__figure__clickable-div {
+    grid-column: 9/span 3;
   }
 
-  .map__map__figure__ministry {
+  .mapPage__map__figure__ministry {
     grid-column: 5;
     grid-row: 12;
   }
 
-  .map__map__figure__goma {
+  .mapPage__map__figure__goma {
     grid-column: 13;
   }
 
-  .map__map__figure__mine {
+  .mapPage__map__figure__mine {
     grid-column: 11;
     grid-row: 7;
   }
@@ -549,6 +551,10 @@ table {
 }
 .nokia__conversation__name {
   font-size: 0.7em;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
