@@ -8,6 +8,10 @@
 @import "startPage";
 @import "nokia";
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: $background-color;
   color: $text-color;
