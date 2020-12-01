@@ -1,12 +1,12 @@
 const dialogs = [
-  {"id": "js--nokia2.1", "dialog": "We zijn sinds 2001 bezig met dit probleem, dat het materiaal coltan uit congo gemaakt kan worden tot tantalum, wat weer gebruikt wordt in mobiele telefoons"},
-  {"id": "js--nokia2.2", "dialog": "Hierna zijn we naar onze leveranciers gegaan en hebben toen gevraagd of ze kunnen traceren waar de mineralen vandaan komen?"},
-  {"id": "js--nokia2.3", "dialog": "We kwamen er alleen snel achter dat er een grote uitdaging is in het traceren van de mineralen, je kunt niet de mineralen labelen"},
-  {"id": "js--nokia2.4", "dialog": "U zegt nu dus dat we de mineralen niet kunnen traceren, alleen Duitse onderzoekers hebben bewezen van wel"},
-  {"id": "js--nokia2.5", "dialog": "Dat hebben wij nog niet vernomen, we zullen er mee aan de slag gaan"},
-  {"id": "js--nokia2.6", "dialog": "Verder kunnen wij er moeilijk voor zorgen dat onze vraag naar helderheid in de supply chain ook volledig door komt"},
-  {"id": "js--nokia2.7", "dialog": "Het is een serieus probleem, we hopen dat er een oplossing komt waardoor wij veilig kunnen zeggen dat onze leveranciers verantwoordelijk zijn"},
-  {"id": "js--nokia2.8", "dialog": "Klik hier om verder te gaan naar de volgende pagina"}
+  {"id": "js--nokiaTextInput2.1", "dialog": "We zijn sinds 2001 bezig met dit probleem, dat het materiaal coltan uit congo gemaakt kan worden tot tantalum, wat weer gebruikt wordt in mobiele telefoons"},
+  {"id": "js--nokiaTextInput2.2", "dialog": "Hierna zijn we naar onze leveranciers gegaan en hebben toen gevraagd of ze kunnen traceren waar de mineralen vandaan komen?"},
+  {"id": "js--nokiaTextInput2.3", "dialog": "We kwamen er alleen snel achter dat er een grote uitdaging is in het traceren van de mineralen, je kunt niet de mineralen labelen"},
+  {"id": "js--nokiaTextInput2.4", "dialog": "U zegt nu dus dat we de mineralen niet kunnen traceren, alleen Duitse onderzoekers hebben bewezen van wel"},
+  {"id": "js--nokiaTextInput2.5", "dialog": "Dat hebben wij nog niet vernomen, we zullen er mee aan de slag gaan"},
+  {"id": "js--nokiaTextInput2.6", "dialog": "Verder kunnen wij er moeilijk voor zorgen dat onze vraag naar helderheid in de supply chain ook volledig door komt"},
+  {"id": "js--nokiaTextInput2.7", "dialog": "Het is een serieus probleem, we hopen dat er een oplossing komt waardoor wij veilig kunnen zeggen dat onze leveranciers verantwoordelijk zijn"},
+  {"id": "js--nokiaTextInput2.8", "dialog": "Klik hier om verder te gaan naar de volgende pagina"}
 ];
 window.onload = loadPage
 
