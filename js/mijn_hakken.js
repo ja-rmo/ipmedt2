@@ -5,6 +5,7 @@ let currentPage = document.getElementById('js--currentPage');
 let verderButton = document.getElementById('js--verderButton');
 let erts = document.getElementById('img-mine_cassiterite');
 let newErts = document.getElementById('img-mine_cassiterite_2');
+const mine = document.getElementsByClassName('mine');
 
 var onderwegCounter = 1;
 let ertsClick = 0;
@@ -39,7 +40,11 @@ erts.onclick = function() {
 };
 
 newErts.onclick = function() {
-    window.location.href = "kinderarbeid.html";
+    mine[0].style.animationName = "fadeOut";
+    mine[0].style.opacity = "0";
+    setTimeout(function () {
+        window.location.href = "eindvraag.html";
+    },1500);
 };
 
 updateText = function() {

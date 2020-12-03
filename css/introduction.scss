@@ -1,0 +1,133 @@
+.introduction {
+  width: 80%;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+
+  &__schoolproject {
+    height: 100vh;
+    color: white;
+    top: 50%;
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: $font-size-title;
+      padding: 5rem 0;
+    }
+
+    &__description {
+      font-size: $font-size-description;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    &__form {
+      position: absolute;
+      bottom: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &__button {
+        font-size: $font-size-description;
+        background-color: #E3E3E3;
+        color: #202020;
+        border: 1px solid #E3E3E3;
+        padding: 1rem;
+      }
+
+      &__button:hover {
+        font-size: $font-size-description;
+        background-color: #202020;
+        color: #E3E3E3;
+      }
+    }
+  }
+
+  &__verhaal {
+    width: 80%;
+
+    &__description {
+      font-size: $font-size-description;
+      text-align: center;
+      line-height: 1.2;
+      position: absolute;
+      width: 90%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+    }
+
+    #js--description__1 {
+      opacity: 0;
+      animation-duration: 0.5s;
+    }
+
+    #js--description__2 {
+      opacity: 0;
+      animation-duration: 0.5s;
+    }
+
+    #js--description__3 {
+      opacity: 0;
+      animation-duration: 0.5s;
+    }
+  }
+
+  &__frank {
+    height: 100vh;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+
+    &__title {
+      font-size: $font-size-title;
+      text-align: center;
+      padding: 3rem 0 2rem 0;
+    }
+
+    &__description {
+      font-size: $font-size-description;
+      text-align: center;
+      padding-bottom: 2rem;
+      line-height: 1.2;
+    }
+
+    &__form {
+      position: absolute;
+      bottom: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &__button {
+        font-size: $font-size-description;
+        background-color: #E3E3E3;
+        color: #202020;
+        border: 1px solid #E3E3E3;
+        padding: 1rem;
+      }
+
+      &__button:hover {
+        font-size: $font-size-description;
+        background-color: #202020;
+        color: #E3E3E3;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

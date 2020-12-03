@@ -1,0 +1,65 @@
+.eindvraag {
+  width: 80%;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+
+  &__title {
+    text-align: center;
+    font-size: $font-size-title;
+    padding: 5rem 0;
+    width: 100%;
+    line-height: 1.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #meer-informatie-link {
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #terug-naar-begin-link {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__link {
+    opacity: 0;
+    text-align: center;
+    border: 1px solid #E3E3E3;
+    background-color: #202020;
+    color: #E3E3E3;
+    padding: 1rem;
+    animation-duration: 0.5s;
+  }
+
+  &__link:hover {
+    background-color: #E3E3E3;
+    color: #202020;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

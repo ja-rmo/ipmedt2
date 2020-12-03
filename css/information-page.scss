@@ -1,34 +1,36 @@
 .information-page {
   width: 95%;
-  margin: 10px auto 0 auto;
+  margin: 1rem auto 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 
   &__body {
-
     &__title {
-      font-size: $mobile-title-font-size;
+      font-size: 6rem;
       display: flex;
       justify-content: center;
-      padding: 10px;
+      padding: 3rem 1rem 1rem 1rem;
     }
 
     &__text {
-      line-height: 1.5rem;
+      font-size: 4rem;
+      margin: 2rem 0;
     }
 
     &__figure > img {
       width: 100%;
-      padding: 10px 0;
+      padding: 1rem 0;
     }
 
     &__form {
       display: flex;
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
 
       &__button {
-        margin-top: 10px;
-        font-size: 2rem;
-        padding: 10px;
+        margin-top: 1rem;
+        font-size: 4rem;
+        padding: 20rem;
       }
     }
   }
@@ -36,28 +38,29 @@
 
 .kinderarbeid {
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 
   &__title {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 30px;
+    text-align: center;
+    font-size: $font-size-title;
+    padding: 5rem 0;
   }
 
   &__title-2 {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 20px;
+    text-align: center;
+    font-size: $font-size-subtitle;
+    padding: 3rem 0;
   }
 
   &__information {
-    padding: 10px 0;
-    line-height: 20px;
+    font-size: $font-size-description;
+    line-height: 1.2;
   }
 
   &__information > a {
+    font-size: $font-size-description;
     color: red;
   }
 
@@ -72,5 +75,14 @@
   &__disclaimer > a {
     color: red;
     font-size: inherit;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

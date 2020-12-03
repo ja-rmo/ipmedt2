@@ -1,4 +1,6 @@
 .mine {
+  opacity: 1;
+  animation-duration: 0.5s;
 
   &__background {
     height: 100vh;
@@ -8,20 +10,6 @@
 
     &__img {
       height: 100%;
-    }
-
-    &__safe-route-button {
-      position: absolute;
-      z-index: 100;
-      top: 70%;
-      left: 10px;
-    }
-
-    &__normal-route-button {
-      position: absolute;
-      z-index: 100;
-      top: 70%;
-      left: 50%;
     }
 
     #img-walikale_market {
@@ -150,17 +138,33 @@
   }
 }
 
+.information-page__button {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: #E3E3E3;
+  background-color: #202020;
+  border: 1px solid #E3E3E3;
+  padding: 2rem;
+}
+
+.information-page__button:hover {
+  color: #202020;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
+  padding: 2rem;
+}
+
 .normal__button {
   color: white;
-  background-color: black;
+  background-color: #202020;
   border: 1px solid white;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .normal__button:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid white;
+  color: #202020;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
   padding: 5px;
 }
 
@@ -211,5 +215,14 @@
     left: 0;
     transform: translateX(50%);
     width: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

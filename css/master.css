@@ -51,24 +51,26 @@ table {
 }
 
 .mapPage {
+  width: 90%;
   margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 .mapPage__text-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
 }
 .mapPage__text-section__title {
-  font-size: 6rem;
-  padding: 1rem;
+  font-size: 4rem;
+  padding: 5rem 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .mapPage__text-section__description {
-  font-size: 4rem;
+  font-size: 2rem;
+  line-height: 1.2;
   padding: 2rem 0;
 }
 .mapPage__map {
@@ -211,55 +213,67 @@ table {
     grid-row: 7;
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .information-page {
   width: 95%;
-  margin: 10px auto 0 auto;
+  margin: 1rem auto 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 .information-page__body__title {
-  font-size: 4rem;
+  font-size: 6rem;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 3rem 1rem 1rem 1rem;
 }
 .information-page__body__text {
-  line-height: 1.5rem;
+  font-size: 4rem;
+  margin: 2rem 0;
 }
 .information-page__body__figure > img {
   width: 100%;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 .information-page__body__form {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .information-page__body__form__button {
-  margin-top: 10px;
-  font-size: 2rem;
-  padding: 10px;
+  margin-top: 1rem;
+  font-size: 4rem;
+  padding: 20rem;
 }
 
 .kinderarbeid {
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 .kinderarbeid__title {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  font-size: 30px;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5rem 0;
 }
 .kinderarbeid__title-2 {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  font-size: 20px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem 0;
 }
 .kinderarbeid__information {
-  padding: 10px 0;
-  line-height: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 .kinderarbeid__information > a {
+  font-size: 2rem;
   color: red;
 }
 .kinderarbeid__table {
@@ -273,6 +287,18 @@ table {
   font-size: inherit;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mine {
+  opacity: 1;
+  animation-duration: 0.5s;
+}
 .mine__background {
   height: 100vh;
   width: 100%;
@@ -281,18 +307,6 @@ table {
 }
 .mine__background__img {
   height: 100%;
-}
-.mine__background__safe-route-button {
-  position: absolute;
-  z-index: 100;
-  top: 70%;
-  left: 10px;
-}
-.mine__background__normal-route-button {
-  position: absolute;
-  z-index: 100;
-  top: 70%;
-  left: 50%;
 }
 .mine__background #img-walikale_market {
   position: absolute;
@@ -401,17 +415,33 @@ table {
   justify-content: center;
 }
 
+.information-page__button {
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: #E3E3E3;
+  background-color: #202020;
+  border: 1px solid #E3E3E3;
+  padding: 2rem;
+}
+
+.information-page__button:hover {
+  color: #202020;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
+  padding: 2rem;
+}
+
 .normal__button {
   color: white;
-  background-color: black;
+  background-color: #202020;
   border: 1px solid white;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .normal__button:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid white;
+  color: #202020;
+  background-color: #E3E3E3;
+  border: 1px solid #E3E3E3;
   padding: 5px;
 }
 
@@ -462,96 +492,195 @@ table {
     width: 100%;
   }
 }
-.index {
-  display: grid;
-  grid-template-columns: repeat(5, 20vw);
-  grid-template-rows: repeat(5, 20vh);
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-.index__start {
-  grid-column: 2/5;
-  grid-row: 3;
-  text-align: center;
-  font-size: 9vh;
+.introduction {
+  width: 80%;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
-.index__start a {
-  text-decoration: none;
-  color: #e5e5e5;
+.introduction__schoolproject {
+  height: 100vh;
+  color: white;
+  top: 50%;
 }
-.index__volume {
-  grid-column: 1;
-  grid-row: 5;
-}
-
-.start {
-  display: grid;
-  grid-template-columns: repeat(5, 20vw);
-  grid-template-rows: repeat(5, 20vh);
-}
-.start__verhaalIntro {
-  display: none;
-  grid-column: 2/5;
-  grid-row: 2;
-  text-align: center;
-  font-size: 5vh;
-  color: #e5e5e5;
-}
-.start__verhaalIntro__keuzeOptie {
-  line-height: 20vh;
-}
-.start__verhaalIntro__keuzeOptie a {
-  color: #e5e5e5;
-}
-
-.nokia__keyboard {
-  position: fixed;
+.introduction__schoolproject__title {
   width: 100%;
-  bottom: 0;
-}
-.nokia__keyboard img {
-  width: 100%;
-}
-.nokia__conversation {
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  line-height: 1.2em;
-  margin-top: 2.4em;
-  margin-bottom: 244px;
-}
-.nokia__conversation__naration {
-  display: none;
   text-align: center;
-  grid-column: 1/4;
-  padding: 0.5em;
+  font-size: 4rem;
+  padding: 5rem 0;
 }
-.nokia__conversation__left {
-  display: none;
-  text-align: left;
-  grid-column: 1/3;
-  padding: 0.5em 0;
+.introduction__schoolproject__description {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
 }
-.nokia__conversation__left p {
-  padding-left: 8%;
+.introduction__schoolproject__form {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.nokia__conversation__right {
-  display: none;
-  text-align: right;
-  grid-column: 2/4;
-  padding: 0.5em 0;
+.introduction__schoolproject__form__button {
+  font-size: 2rem;
+  background-color: #E3E3E3;
+  color: #202020;
+  border: 1px solid #E3E3E3;
+  padding: 1rem;
 }
-.nokia__conversation__right p {
-  padding-right: 8%;
+.introduction__schoolproject__form__button:hover {
+  font-size: 2rem;
+  background-color: #202020;
+  color: #E3E3E3;
 }
-.nokia__conversation__name {
-  font-size: 0.7em;
+.introduction__verhaal {
+  width: 80%;
+}
+.introduction__verhaal__description {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+.introduction__verhaal #js--description__1 {
+  opacity: 0;
+  animation-duration: 0.5s;
+}
+.introduction__verhaal #js--description__2 {
+  opacity: 0;
+  animation-duration: 0.5s;
+}
+.introduction__verhaal #js--description__3 {
+  opacity: 0;
+  animation-duration: 0.5s;
+}
+.introduction__frank {
+  height: 100vh;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.introduction__frank__title {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+.introduction__frank__description {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  line-height: 1.2;
+}
+.introduction__frank__form {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.introduction__frank__form__button {
+  font-size: 2rem;
+  background-color: #E3E3E3;
+  color: #202020;
+  border: 1px solid #E3E3E3;
+  padding: 1rem;
+}
+.introduction__frank__form__button:hover {
+  font-size: 2rem;
+  background-color: #202020;
+  color: #E3E3E3;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.eindvraag {
+  width: 80%;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+.eindvraag__title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 5rem 0;
+  width: 100%;
+  line-height: 1.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eindvraag #meer-informatie-link {
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.eindvraag #terug-naar-begin-link {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.eindvraag__link {
+  opacity: 0;
+  text-align: center;
+  border: 1px solid #E3E3E3;
+  background-color: #202020;
+  color: #E3E3E3;
+  padding: 1rem;
+  animation-duration: 0.5s;
+}
+.eindvraag__link:hover {
+  background-color: #E3E3E3;
+  color: #202020;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #404452;
-  color: #e5e5e5;
+  background-color: #202020;
+  color: #E3E3E3;
   font-family: "Roboto", sans-serif;
 }
 

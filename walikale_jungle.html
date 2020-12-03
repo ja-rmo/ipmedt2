@@ -15,23 +15,26 @@
                 <img    srcset="img/congo_achtergronden/jungle_640.jpg 640w,
                                 img/congo_achtergronden/jungle_1280.jpg 1280w,
                                 img/congo_achtergronden/jungle_1920.jpg 1920w"
-                        sizes="(min-width: 1920px) 1920px, (min-width: 1280px) 1280px, 640px"
+                        sizes="100vw"
                         class="mine__background__img" id="img-jungle-path-right" src="img/congo_achtergronden/jungle_640.jpg" alt="Een route door de jungle">
             </figure>
             <div class="mine__dialog-section">
                 <div class="mine__dialog-section__text-section">
                     <div class="mine__dialog-section__text-section__arrows-style-div">
-                        <p class="mine__dialog-section__text-section__arrows-style-div__arrow-left" id="js--terugKnop"><</p>
+                        <p class="mine__dialog-section__text-section__arrows-style-div__arrow-left" id="js--terugKnop">&lt;</p>
                         <p class="mine__dialog-section__text-section__arrows-style-div__amount-of-pages" id="js--currentPage">1 / 2</p>
-                        <p class="mine__dialog-section__text-section__arrows-style-div__arrow-right" id="js--verderKnop">></p>
+                        <p class="mine__dialog-section__text-section__arrows-style-div__arrow-right" id="js--verderKnop">&gt;</p>
                     </div>
                     <p class="mine__dialog-section__text-section__text" id="js--dialogText">Alle spullen worden gepakt, vervoer is geregeld en iedereen is er klaar voor. Met 5 scooters en 2 man per scooter gaan jullie op pad…</p>
-                    <form class="mine__background__safe-route-button" action="veiligeRoute.html">
-                        <button id="js--veiligeRoute" class="normal__button" type="submit">Veilige route</button>
-                    </form>
-                    <form class="mine__background__normal-route-button" action="normaleRoute.html">
-                        <button id="js--normaleRoute" class="normal__button" type="submit">Normale route</button>
-                    </form>
+                    <div class="mine__dialog-section__text-section__continue-form">
+                        <form class="mine__background__safe-route-button" action="veiligeRoute.html">
+                            <button id="js--veiligeRoute" class="normal__button" type="submit">Veilige route</button>
+                        </form>
+                        <form class="mine__background__normal-route-button" action="normaleRoute.html">
+                            <button id="js--normaleRoute" class="normal__button" type="submit">Normale route</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>

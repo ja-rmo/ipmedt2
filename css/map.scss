@@ -1,23 +1,25 @@
 .mapPage {
+  width: 90%;
   margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 
   &__text-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
 
     &__title {
-      font-size: 6rem;
-      padding: 1rem;
+      font-size: $font-size-title;
+      padding: 5rem 0;
       width: 100%;
-      display: flex;
-      justify-content: center;
+      text-align: center;
     }
 
     &__description {
-      font-size: 4rem;
+      font-size: $font-size-description;
+      line-height: 1.2;
       padding: 2rem 0;
     }
   }
@@ -178,5 +180,14 @@
   .mapPage__map__figure__mine {
     grid-column: 11;
     grid-row: 7;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
